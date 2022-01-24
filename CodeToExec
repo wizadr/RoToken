@@ -1,0 +1,6 @@
+r294876 = 1
+userid = input('''To continue input your user ID, don't have one? Type "discord" to join our discord and get one. ''')
+if userid == 'r294876':
+	print(f'{userid} balance is: {r294876}')
+else:
+	pass

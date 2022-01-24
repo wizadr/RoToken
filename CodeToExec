@@ -1,8 +1,9 @@
 import webbrowser
 import os
 import sys
-r294876 = 1
-pool = '12.50'
+r294876 = 1000
+r369725 = 200
+pool = '1200'
 userid = input('''To continue input your user ID, don't have one? Type "discord" to join our discord and get one. ''')
 discords = ['discord', 'Discord', 'DISCORD', 'Discord ']
 pools = ['pool', 'pools', 'POOL', 'POOLS', 'Pools', 'Pool']
@@ -21,5 +22,9 @@ else:
     pass
 if userid == 'r294876':
 	print(f'{userid} balance is: {r294876}')
+else:
+	pass
+if userid == 'r369725':
+	print(f'{userid} balance is: {r369725}')
 else:
 	pass

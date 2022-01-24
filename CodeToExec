@@ -6,13 +6,13 @@ r294876 = 1000
 r369725 = 0
 link = 'https://github.com/deflationz/RoToken/raw/main/pool'
 response = requests.get(link)
-pool = response.content
-poolx = (pool.decode('utf-8'))
+poolb = response.content
+pool = (pool.decode('utf-8'))
 userid = input('''To continue input your user ID, don't have one? Type "discord" to join our discord and get one. ''')
 discords = ['discord', 'Discord', 'DISCORD', 'Discord ']
 pools = ['pool', 'pools', 'POOL', 'POOLS', 'Pools', 'Pool']
 if userid in pools:
-    print(f'The current RoToken pool is up to {poolx} tokens')
+    print(f'The current RoToken pool is up to {pool} tokens')
     next = input('Enter to continue, end to quit... ')
     if next == '':
         os.execv(sys.executable, ['python'] + sys.argv)

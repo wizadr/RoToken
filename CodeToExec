@@ -1,49 +1,5 @@
-import webbrowser
-import os
-import sys
-import time
-r294876 = 1000
-r369725 = 0
-link = 'https://github.com/deflationz/RoToken/raw/main/pool'
-response = requests.get(link)
-poolb = response.content
-pool = (pool.decode('utf-8'))
-userid = input('''To continue input your user ID, don't have one? Type "discord" to join our discord and get one. ''')
-discords = ['discord', 'Discord', 'DISCORD', 'Discord ']
-pools = ['pool', 'pools', 'POOL', 'POOLS', 'Pools', 'Pool']
-if userid in pools:
-    print(f'The current RoToken pool is up to {pool} tokens')
-    next = input('Enter to continue, end to quit... ')
-    if next == '':
-        os.execv(sys.executable, ['python'] + sys.argv)
-    else:
-        pass
+a = input('RoToken Wallet is currently down for maintenence, press enter to close... ')
+if a == '':
+    exit()
 else:
-    pass
-if userid in discords:
-    webbrowser.open('https://discord.gg/GBAuk5GxgE')
-    done = input('Launched the RoToken discord invite, enter to restart')
-    if done == '':
-        os.execv(sys.executable, ['python'] + sys.argv)
-    else:
-        time.sleep(60 * 60 * 24)
-else:
-    pass
-if userid == 'r294876':
-    print = input(f'{userid} balance is: {r294876}, enter to restart...')
-    if print == '':
-        print('')
-        os.execv(sys.executable, ['python'] + sys.argv)
-    else:
-        pass
-else:
-	pass
-if userid == 'r369725':
-    print = input(f'{userid} balance is: {r369725}, enter to restart...')
-    if print == '':
-        print('')
-        os.execv(sys.executable, ['python'] + sys.argv)
-    else:
-        pass
-else:
-	pass
+    exit()

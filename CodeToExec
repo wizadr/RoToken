@@ -4,7 +4,7 @@ import sys
 import time
 r294876 = 1000
 r369725 = 0
-pool = '1200'
+pool = '1000'
 userid = input('''To continue input your user ID, don't have one? Type "discord" to join our discord and get one. ''')
 discords = ['discord', 'Discord', 'DISCORD', 'Discord ']
 pools = ['pool', 'pools', 'POOL', 'POOLS', 'Pools', 'Pool']
@@ -27,10 +27,20 @@ if userid in discords:
 else:
     pass
 if userid == 'r294876':
-	print(f'{userid} balance is: {r294876}')
+    print = input(f'{userid} balance is: {r294876}, enter to restart...')
+    if print == '':
+        print('')
+        os.execv(sys.executable, ['python'] + sys.argv)
+    else:
+        pass
 else:
 	pass
 if userid == 'r369725':
-	print(f'{userid} balance is: {r369725}')
+    print = input(f'{userid} balance is: {r369725}, enter to restart...')
+    if print == '':
+        print('')
+        os.execv(sys.executable, ['python'] + sys.argv)
+    else:
+        pass
 else:
 	pass

@@ -1,4 +1,6 @@
 import webbrowser
+import os
+import sys
 r294876 = 1
 pool = '12.50'
 userid = input('''To continue input your user ID, don't have one? Type "discord" to join our discord and get one. ''')
@@ -10,6 +12,11 @@ else:
     pass
 if userid in discords:
     webbrowser.open('https://discord.gg/GBAuk5GxgE')
+    done = input('Launched the RoToken discord invite, enter to restart')
+    if done == '':
+        os.execv(sys.executable, ['python'] + sys.argv)
+    else:
+        pass
 else:
     pass
 if userid == 'r294876':

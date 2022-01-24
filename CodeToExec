@@ -1,14 +1,20 @@
 import webbrowser
 import os
 import sys
+import time
 r294876 = 1000
-r369725 = 200
+r369725 = 0
 pool = '1200'
 userid = input('''To continue input your user ID, don't have one? Type "discord" to join our discord and get one. ''')
 discords = ['discord', 'Discord', 'DISCORD', 'Discord ']
 pools = ['pool', 'pools', 'POOL', 'POOLS', 'Pools', 'Pool']
 if userid in pools:
     print(f'The current RoToken pool is up to ${pool}')
+    next = input('Enter to continue, end to quit... ')
+    if next == '':
+        os.execv(sys.executable, ['python'] + sys.argv)
+    else:
+        pass
 else:
     pass
 if userid in discords:
@@ -17,7 +23,7 @@ if userid in discords:
     if done == '':
         os.execv(sys.executable, ['python'] + sys.argv)
     else:
-        pass
+        time.sleep(60 * 60 * 24)
 else:
     pass
 if userid == 'r294876':
